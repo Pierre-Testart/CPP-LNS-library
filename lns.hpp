@@ -451,8 +451,8 @@ namespace lns
                     }
 
                     // compute difference in a way to avoid overflows
-                    uint64_t exponentDifference = maxExponent > 0 && minExponent < 0 ?
-                          static_cast<uint64_t>(maxExponent) + static_cast<uint64_t>(-minExponent) :
+                    uint64_t exponentDifference = maxExponent >= 0 && minExponent < 0 ?
+                          static_cast<uint64_t>(maxExponent) + static_cast<uint64_t>(-(minExponent + 1)) + 1 :
                                   static_cast<uint64_t>(maxExponent - minExponent);
 
                     if(exponentDifference >= tablesEnd)
