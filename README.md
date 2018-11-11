@@ -2,7 +2,7 @@
 
 This project was carried out by Pierre Testart, student at Politecnico di Milano.  
 Its aim was to create a header-only library to support the Logarithmic Number System in C++, and then to integrate benchmarks (from [Axbench](http://axbench.org/)) to measure accuracy and performance.  
-This is the header-only library, the benchmarks will be uploaded in a different Github repository.  
+This is the header-only library, the benchmarks are available [here](https://github.com/Pierre-Testart/CPP-LNS-benchmarks).  
 C++14 is the required standard to use the library.
 
 ### How to use the LNS types
